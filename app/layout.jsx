@@ -1,6 +1,4 @@
-import React from "react";
-
-export default function Layout({ children }) {
+export default function LayoutRoot({ children }) {
   return (
     <html lang="en">
       <head>
