@@ -1,7 +1,10 @@
+import Breadcrumb from "../components/breadcrumb";
+
 export default function Home() {
   return (
     <>
-      <h1>Login Page</h1>
+      <Breadcrumb>Dashboard</Breadcrumb>
+      <p>Informasi Lainnya</p>
     </>
   );
 }

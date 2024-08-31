@@ -1,5 +1,5 @@
-import React from "react";
+import Breadcrumb from "@/components/breadcrumb";
 
 export default function DoctorPage() {
-  return <div>DoctorPage</div>;
+  return <Breadcrumb>DoctorPage</Breadcrumb>;
 }

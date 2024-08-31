@@ -1,7 +1,22 @@
 // "use client"; // jika alert mau tampil di client
+import Breadcrumb from "@/components/breadcrumb";
+import RecordCard from "@/components/RecordCard";
 
 import React from "react";
 console.log("Log ini jalan di server saja");
 export default function RecorderPage() {
-  return <div>RecorderPage</div>;
+  const user = {
+    name: "ugik",
+    status: true,
+    created_at: "10.10",
+  };
+  return (
+    <>
+      <Breadcrumb>RecorderPage</Breadcrumb>
+      <div className="flex flex-wrap">
+        {}
+        <RecordCard user={user} />
+      </div>
+    </>
+  );
 }
