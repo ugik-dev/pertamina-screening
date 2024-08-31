@@ -1,9 +1,10 @@
 import "./global.css";
 import Navbar from "../components/navbar";
+import { roboto, nerko } from "./fonts";
 
 export default function LayoutRoot({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${roboto.variable} ${nerko.variable} `}>
       <head>
         <title>Pertamina Screening</title>
       </head>

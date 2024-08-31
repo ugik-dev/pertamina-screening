@@ -12,9 +12,12 @@ export default function RecorderPage() {
   };
   return (
     <>
-      <Breadcrumb>RecorderPage</Breadcrumb>
       <div className="flex flex-wrap">
-        {}
+        <RecordCard user={user} />
+        <RecordCard user={user} />
+        <RecordCard user={user} />
+        <RecordCard user={user} />
+        <RecordCard user={user} />
         <RecordCard user={user} />
       </div>
     </>

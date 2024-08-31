@@ -1,7 +1,11 @@
-import { robot, nerko } from "@/app/fonts";
+import { nerko } from "@/app/fonts";
 
 export default function Breadcrumb({ children }) {
   return (
-    <h1 className={`text-2xl font-bold pb-3 ${nerko.className}`}>{children}</h1>
+    <span>
+      <h1 className="text-2xl pb-3 font-nerko">
+        App / <span className={nerko.className}>{children}</span>
+      </h1>
+    </span>
   );
 }
