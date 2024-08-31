@@ -1,4 +1,5 @@
 import Link from "next/link";
+import "./global.css";
 
 export default function LayoutRoot({ children }) {
   return (
@@ -25,7 +26,10 @@ export default function LayoutRoot({ children }) {
           </nav>
         </header>
         <main>{children}</main>
-        <footer>[footer]</footer>
+        <footer>
+          <hr />
+          Development by <a href="https://ugikdev.site">@ugikdev</a>
+        </footer>
       </body>
     </html>
   );
