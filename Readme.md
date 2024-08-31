@@ -20,3 +20,4 @@ https://nextjs.org/docs/app/building-your-application/styling
 Tailwind CSS
 npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
+https://tailwindcss.com/docs/customizing-colors

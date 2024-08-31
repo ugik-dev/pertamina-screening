@@ -1,5 +1,5 @@
-import Link from "next/link";
 import "./global.css";
+import Navbar from "../components/navbar";
 
 export default function LayoutRoot({ children }) {
   return (
@@ -7,28 +7,15 @@ export default function LayoutRoot({ children }) {
       <head>
         <title>Pertamina Screening</title>
       </head>
-      <body>
+      <body className="bg-green-100 flex flex-col px-6 py-4 min-h-screen">
         <header>
-          <nav>
-            <ul>
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/doctor/recorder">Recorder</Link>
-              </li>
-              <li>
-                <Link href="/management-user" prefetch={false}>
-                  User
-                </Link>
-              </li>
-            </ul>
-          </nav>
+          <Navbar></Navbar>
         </header>
-        <main>{children}</main>
-        <footer>
-          <hr />
-          Development by <a href="https://ugikdev.site">@ugikdev</a>
+        <main className="py-3 grow">{children}</main>
+        <footer className="border-t py-3 text-center">
+          <span className="text-xs">
+            Development by <a href="https://ugikdev.site">@ugikdev</a>
+          </span>
         </footer>
       </body>
     </html>
