@@ -1,12 +1,14 @@
-import { readFile } from "node:fs/promises";
+import { getRecord } from "@/lib/get_record";
 
 export default async function Result() {
-  const content = await readFile("./content/dumy_recorder.md", "utf-8");
+  const post = await getRecord();
 
   return (
     <div>
-      Result
-      <p>{content}</p>
+      <h3> Tekanan Darah : {post.result.tekanan_darah} mmHg</h3>
+      <h3> Suhu : {post.result.suhu} &deg;C </h3>
+      <h3> Nadi : {post.result.nadi} bpm</h3>
+      <p>{post.content}</p>
     </div>
   );
 }
